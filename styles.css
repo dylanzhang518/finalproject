@@ -1,0 +1,16 @@
+header {
+    background: #fff;
+}
+
+.headerlogo {
+    width: 30%;
+}
+    
+nav {
+    padding: 15px 0;
+    background: #fff;
+}
+
+.main_content {
+    margin-top: 50px;
+}
