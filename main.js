@@ -1,8 +1,64 @@
-var dataRequest = new XMLHttpRequest();
-var dataUrl =
-"https://data.ny.gov/api/views/bhia-729m/rows.json?accessType=DOWNLOAD";
-var btn = document.getElementById("btn");
+var data = $.getJSON("dataset.json", function() {
+    console.log("success");
+});
+
+var stringed = JSON.stringify(data);
+
+console.log(data);
+
+$("#submitBtn").on("click", function(){
+    console.log("FACILITY BTN CLICKED");
+});
+
+$.each(data, function(i, item) {
+    console.log(data.result[i].County);
+});
+
+
+/*
+
+var btn = document.getElementById("cityName");
 var sendText = document.getElementById("results");
+var city = $("#cityName");
+
+$("#cityName").on("click", function() {
+    $("#recycleCenters").html("testing123");
+    
+});
+
+
+
+
+/*
+
+$.ajax({
+    url:"https://data.ny.gov/api/views/bhia-729m/rows.xml?accessType=DOWNLOAD",
+    dataType: "xml",
+    success: function(data) {
+        console.log(
+
+        );
+    }
+});
+
+
+
+
+$("#submitBtn").on("click", function(){
+    console.log("FACILITY BTN CLICKED");
+    $("#recycleCenters").html("Facilities: " + $facility);
+});
+
+*/
+
+
+
+
+
+
+
+/******************************************** 
+
 
 btn.addEventListener("click", function (){
     dataRequest.open("GET", dataUrl);
@@ -17,49 +73,4 @@ btn.addEventListener("click", function (){
 
 
 
-/* From Tutorial */
-
-/*
-var ourRequest = new XMLHttpRequest();
-var ourURL = 'https://raw.githubusercontent.com/stevecif/JSON/master/pets.json';
-var btn = document.getElementById("btn");
-var petContainer = document.getElementById("pet-info");
-
-btn.addEventListener("click", function(){
-
-	ourRequest.open('GET', ourURL);
-	ourRequest.onload = function() {
-		var ourData = JSON.parse(ourRequest.responseText);
-		console.log(ourData[0]);
-        renderHTML(ourData, "all");
-	};
-	ourRequest.send();
-});
-
-
-function renderHTML(data, amount) {
-    var htmlString = "";
-    
-    if (amount == "all") {
-        var amount = data.length;
-    }
-    
-    for (i = 0 ; i < amount; i++ ) {
-        htmlString += "<p>" + data[i].name + " is a " + data[i].species + " that likes"
-        
-        for (ii = 0; ii < data[i].foods.likes.length; ii++) {
-        
-            htmlString += " " + data[i].foods.likes[ii] + " and"; 
-            
-        }
-        
-        htmlString = htmlString.slice(0, -4);
-        htmlString += ".</p>";
-        
-    }
-    
-    petContainer.insertAdjacentHTML('beforeend', htmlString);
-};
-
-
-*/
+*********************************************/

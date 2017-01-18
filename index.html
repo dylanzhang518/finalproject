@@ -24,23 +24,38 @@
 
 <!-- END BODY CONTENT -->    
     <div class="row main_content">
-        <div id="whyrecycle" class="col-md-6">
+        <div id="whyrecycle" class="col-md-6 content">
             <h2>Why Recycle?</h2>
             <p>Recycling allows everyday consumers, retailers, and municipalities reduce their everyday ecological footprint</p>
+            <p>Responsible electronics recycling provides important benefits, such as the following: 
+            </p>
+            <ul>
+                <li>Reducing environmental and human health impacts from improper recycling</li>
+                <li>Increasing access to quality reusable and refurbished equipment to those who need it</li>
+                <li>Reducing energy use and other environmental impacts associated with mining and processing of virgin materials, conserving our limited natural resources</li>
+            </ul>
         </div>
-        <div id="whatcani" class="col-md-6">
+        <div id="whatcani" class="col-md-6 content">
             <h2>What Can I Recycle?</h2>
             <p>Local recycling facilities differ in particular items which can be recycled, however most locations recycle lamps, lightbulbs, miscellaneous electronics.</p>
+            
         </div>
-        <div id="localplants" class="col-md-12">
+        <div id="localplants" class="col-md-12 content">
             <h2>Where Can I Recycle?</h2>
             <p>Use this tool to locate your closest electronic waste recycling facility.</p>
-            <button id="btn" class="btn btn-primary">Click Me </button>
-            <p id="results"></p>
+            <div class="input-group">
+                <input type="text" name="search" placeholder="Search...">
+                <button type="submit" id="submitBtn" class="btn btn-secondary">Submit </button>
+                <ul id="recycleCenters">
+                </ul>
+            </div>
         </div>    
     </div>    
 <footer>
-    
+    <h5 class='footerheader'>Other Resources</h5>
+     <a href='https://www.epa.gov/smm-electronics'>EPA Sustainable Management of Electronics</a>
+     <a href='#'></a>
+     <a href='#'></a>
 </footer>   
  
     
@@ -56,10 +71,15 @@
 
     
     <!-- BOOTSTRAP SCRIPT -->    
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>  
-    <!-- BOOTSTRAP SCRIPT END -->    
-    <script src="main.js"></script>    
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>  
+    <!-- BOOTSTRAP SCRIPT END --> 
+    <!-- JQUERY CDN BEGIN -->
+<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script> 
+    <!-- JQUERY CDN END-->
+    <!-- LOCAL JS FILE BEGIN-->
+<script src="main.js"></script>    
+    <!-- LOCAL JS FILE END-->
 </body>
 </html>
