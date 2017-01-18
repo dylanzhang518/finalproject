@@ -1,85 +1,194 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Electronic Waste Recycling</title>
-    <link rel="stylesheet" href="styles.css">    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Electronic Waste Recycling</title>
+	<link  href="css/styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
 </head>
-<body class="container">
-    
-<!-- BEGIN NAVBAR -->    
-<header>
-    <img class="headerlogo" src="http://schoolfoodmatters.org/sites/default/files/recyclenow.jpg">
-</header>
-   
-    <nav class="row nav">
-      <a class="nav-link active" href="#whyrecycle">Why Recycle?</a>
-      <a class="nav-link" href="#whatcani">What Can I Recycle?</a>
-      <a class="nav-link" href="#localplants">Local Recycling Plants</a>
-    </nav>
-
-<!-- END NAVBAR -->
-<!-- BEGIN BODY CONTENT -->   
-
-<!-- END BODY CONTENT -->    
-    <div class="row main_content">
-        <div id="whyrecycle" class="col-md-6 content">
-            <h2>Why Recycle?</h2>
-            <p>Recycling allows everyday consumers, retailers, and municipalities reduce their everyday ecological footprint</p>
-            <p>Responsible electronics recycling provides important benefits, such as the following: 
-            </p>
-            <ul>
-                <li>Reducing environmental and human health impacts from improper recycling</li>
-                <li>Increasing access to quality reusable and refurbished equipment to those who need it</li>
-                <li>Reducing energy use and other environmental impacts associated with mining and processing of virgin materials, conserving our limited natural resources</li>
+<body>
+	<!-- BEGIN NAVBAR -->
+    <div class="container">
+        <header>
+            <img class="headerlogo" src="http://schoolfoodmatters.org/sites/default/files/recyclenow.jpg">
+        </header>
+        <nav class="row nav">
+            <a class="nav-link active" href="#whyrecycle">Why Recycle?</a>
+            <a class="nav-link" href="#whatcani">What Can I Recycle?</a>
+            <a class="nav-link" href="#localplants">Local Recycling Plants</a>
+        </nav>
+    </div>
+	<!-- END NAVBAR -->
+	<!-- BEGIN SLIDER -->
+    <div class="stage">
+        <div id="SLDR-ONE" class="sldr">
+            <ul class="wrp animate">
+                <li class="elmnt-one"><div class="skew"><div class="wrap"><img src="http://thewindowsclub.thewindowsclubco.netdna-cdn.com/wp-content/uploads/2014/02/problems-of-ewaste.jpg" width="1000" height="563"></div></div></li>
+                <li class="elmnt-two"><div class="skew"><div class="wrap"><img src="http://www.buddygambol.com/images/2014/07/intolerable%20beauty-4.jpg" width="1000" height="563"></div></div></li>
+                <li class="elmnt-three"><div class="skew"><div class="wrap"><img src="http://nationswell.com/wp-content/uploads/2014/03/landfill.jpg" width="1000" height="563"></div></div></li>
+                <li class="elmnt-four"><div class="skew"><div class="wrap"><img src="https://cdn0.vox-cdn.com/thumbor/d0k3mzmIALoSOjSaf7xBMq19EAA=/cdn0.vox-cdn.com/uploads/chorus_asset/file/6686421/akrales_160308_0938_A_0472.0.jpg" width="1000" height="563"></div></div></li>
             </ul>
         </div>
-        <div id="whatcani" class="col-md-6 content">
-            <h2>What Can I Recycle?</h2>
-            <p>Local recycling facilities differ in particular items which can be recycled, however most locations recycle lamps, lightbulbs, miscellaneous electronics.</p>
-            
+
+        <div class="clear"></div>
+
+        <div class="captions">
+         <div class="focalPoint"><p><small>Computers</small></p></div>
+         <div><p><small>Phones</small></p></div>
+         <div><p><small>Landfills</small></p></div>
+         <div><p><small>Recycling Plant</small></p></div>
         </div>
-        <div id="localplants" class="col-md-12 content">
-            <h2>Where Can I Recycle?</h2>
-            <p>Use this tool to locate your closest electronic waste recycling facility.</p>
-            <div class="input-group">
-                <input type="text" name="search" placeholder="Search...">
-                <button type="submit" id="submitBtn" class="btn btn-secondary">Submit </button>
-                <ul id="recycleCenters">
-                </ul>
-            </div>
-        </div>    
-    </div>    
-<footer>
-    <h5 class='footerheader'>Other Resources</h5>
-     <a href='https://www.epa.gov/smm-electronics'>EPA Sustainable Management of Electronics</a>
-     <a href='#'></a>
-     <a href='#'></a>
-</footer>   
- 
-    
-    
-    
-<!--   
-    <div>
-        <h2>Data Load</h2>
-        <button id="btn" class="btn btn-primary">Click Me!</button>
+
+        <!--
+        <ul class="selectors">
+            <li class="focalPoint"><a href="">•</a></li><li><a href="">•</a></li><li><a href="">•</a></li><li><a href="">•</a></li>
+        </ul>
+
+        <button class="sldr-prv sldr-nav prev">Prev</button>
+        <button class="sldr-nxt sldr-nav next">Next</button>
+
+        <p>Scale browser to see responsive demo.</p>
+        <p style="float:left;">&#8596;&nbsp;</p>
+        <p style="float:right;">&nbsp;&#8596;</p>
+
+        <p><small>These images are jpgs masked using a CSS transform method (and a filter method for IE). They are completely responsive and support the following desktop browsers; Chrome, Safari, Firefox, IE 8+, and mobile browsers; IOS 3+, Android 4+.</small></p>
+
+        <div class="clear"></div>
+
+    -->
+
+
     </div>
+	<!-- END SLIDER -->
+    <!-- BEGIN BODY CONTENT -->
+    <div class="container">
+        <div class="row main_content">
+            <div id="whyrecycle" class="col-md-6">
+                <h2 class="heading">Why Recycle?</h2>
+                <strong>The United States produces more electronic waste annually than any other country, a total of 9.4 <i>million tons.</i></strong><br/>
+                <p>Recycling electronics prevents valuable, limited materials fom going into the waste stream and landfills. Recycling reduces the overall energy use and pollution that would be created while manufactring new products. Recycling allows everyday consumers, retailers, and municipalities to reduce their everyday environmental footprint.</p>
 
--->
+            </div>
+            <div id="whatcani" class="col-md-6">
+                <h2 class="heading">What Can I Recycle?</h2>
+                <p>Local recycling facilities differ in particular items which can be recycled, however most locations recycle lamps, lightbulbs, miscellaneous electronics.</p>
+            </div>
+            <div class="container">
+                <div class="jumbotron" id="box2">
+                    <div id="wherecani" class="container">
+                        <h1>Where Can I Recycle?</h1>
+                        <p>Use this tool to locate your closest electronic waste recycling facility.</p>
+                    </div>
 
+                    <div class="container">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="location" placeholder="Enter zip code">
+                            <span class="input-group-btn">
+                     <button type="button" class="btn btn-info" id="submitBtn">Submit</button>
+                   </span>
+                        </div>
+                    </div>
+                    <div class=container>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <ul id="recycleCenters" class="list-group text-left">
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+	<!-- END BODY CONTENT -->    
+<footer>
+
+</footer>
+
+ 
+<!--jquery slider -->    
+<script src="js/jquery-1.10.2.min.js"></script>    
+<script src="js/jquery.sldr.js"></script>
+<script>
+$( window ).load( function() {
+
+	$( '.sldr' ).each( function() {
+		var th = $( this );
+		th.sldr({
+			focalClass    : 'focalPoint',
+			offset        : th.width() / 2,
+			sldrWidth     : 'responsive',
+			nextSlide     : th.nextAll( '.sldr-nav.next:first' ),
+			previousSlide : th.nextAll( '.sldr-nav.prev:first' ),
+			selectors     : th.nextAll( '.selectors:first' ).find( 'li' ),
+			toggle        : th.nextAll( '.captions:first' ).find( 'div' ),
+			sldrInit      : sliderInit,
+			sldrStart     : slideStart,
+			sldrComplete  : slideComplete,
+			sldrLoaded    : sliderLoaded,
+			sldrAuto      : true,
+			sldrTime      : 5000,
+			hasChange     : true
+		});
+	});
+
+});
+
+/**
+ * Sldr Callbacks
+ */
+
+/**
+ * When the sldr is initiated, before the DOM is manipulated
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function sliderInit( args ) {
+
+}
+
+/**
+ * When individual slides are loaded
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function slideLoaded( args ) {
+
+}
+
+/**
+ * When the full slider is loaded, after the DOM is manipulated
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function sliderLoaded( args ) {
+
+}
+
+/**
+ * Before the slides change focal points
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function slideStart( args ) {
+
+}
+
+/**
+ * After the slides are done changing focal points
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function slideComplete( args ) {
+
+}
+</script>  
     
-    <!-- BOOTSTRAP SCRIPT -->    
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>  
-    <!-- BOOTSTRAP SCRIPT END --> 
-    <!-- JQUERY CDN BEGIN -->
-<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script> 
-    <!-- JQUERY CDN END-->
-    <!-- LOCAL JS FILE BEGIN-->
-<script src="main.js"></script>    
-    <!-- LOCAL JS FILE END-->
+<!--jquery slider -->    
+<script src="js/main.js"></script>   
 </body>
 </html>
